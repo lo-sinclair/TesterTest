@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello TestController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+
+    <h3>Вопрос {{ question.step }} из 3</h3>
+    <h1>{{ question.question }}</h1>
+    {{ form_start(form) }}
+        {{ form_row(form.answer) }}
+{#    {{ form_row(form.nick) }}#}
+{#    {{ form_row(form.test)}}#}
+
+    {% if question.step == 3 %}
+        <p class="order-confirm-actions"><button class="btn btn-primary" type="submit">Завершить тест</button></p>
+    {% else %}
+        <p class="order-confirm-actions"><button class="btn btn-primary" type="submit">Продолжить</button></p>
+    {% endif %}
+
+    {{ form_end(form) }}
+
+</div>
+{% endblock %}

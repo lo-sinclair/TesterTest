@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <h1>Вас приветствует сервис тестирования!</h1>
+
+    {{ form_start(form) }}
+    {{ form_row(form.nick) }}
+    {{ form_row(form.test)}}
+    <p class="order-confirm-actions"><button class="btn btn-primary" type="submit">Начать тест</button></p>
+    {{ form_end(form) }}
+
+</div>
+{% endblock %}

@@ -1,0 +1,30 @@
+body {
+    background-color: lightgray;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.starter-template {
+    padding: 40px 15px;
+}
+
+h3 {
+    color: #718C00;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+.navbar-brand i {
+    font-size: 32px;
+    padding-right: 8px;
+}
+textarea.form-control {
+    height: 300px;
+}
+.icons {
+    padding: 8px 0;
+}
+.icons i {
+    font-size: 32px;
+}
