@@ -45,7 +45,7 @@ class AppFixtures extends Fixture
         $manager->persist($question);
 
         $question = new Question();
-        $question->setQuestion('Какие языки программирования из перечисленных испозуются для создания сайтов?');
+        $question->setQuestion('Какие языки программирования из перечисленных используются для создания сайтов?');
         $question->setType('multiple');
         $question->setVariants([
             'Symfony'=>'symfony',
