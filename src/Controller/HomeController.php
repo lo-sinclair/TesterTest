@@ -37,8 +37,6 @@ class HomeController extends BaseController
         $nick_cookie = $request->cookies->get('nick');
 
         $session = $request->getSession();
-        //$session = new Session();
-        //$session->start();
 
         $tests = $this->testRepo->findAll();
         $options = [];
@@ -64,7 +62,6 @@ class HomeController extends BaseController
 
         if ($form->isSubmitted() && $form->isValid()) {
             $response = new Response();
-            // data is an array with "name", "email", and "message" keys
             $data = $form->getData();
             $uuid = Uuid::uuid4();
 
